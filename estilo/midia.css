@@ -8,6 +8,46 @@
         flex-basis: 50px;
     }
     
+    .hamburger {
+        border: none;
+        background: none;
+        border-top: 3px solid #fff;
+        cursor: pointer;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+    }
+
+    header > nav {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 0;
+        background: center / cover no-repeat url(/bg.jpg);
+        width: 100vw;
+    }
+
     header > nav > a {
         width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        gap: 32px;
+        padding-block: 16px;
+        pointer-events: none;
+    }
+
+    nav.active .nav {
+        clip-path: circle(100px at 90% -15%);
+        pointer-events: all;
     }
