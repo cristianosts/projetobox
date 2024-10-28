@@ -1,2 +1,89 @@
 @charset "UTF-8";
 
+
+
+
+
+
+section#foto1:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 7%, #000 100%);
+    
+}
+
+
+section#foto1{
+    background-image: url(../pexels-frank-cone-140140-3607542.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section#foto1 > p {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: white;
+    z-index: 50;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section#foto2 {
+    background-image: url(../pexels-cottonbro-7181894.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section#foto2 > p {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: white;
+    z-index: 50;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section#foto3 {
+    background-image: url(/pexels-philippedonn-1257860\ \(1\).jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section#foto3 > p {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: white;
+    z-index: 50;
+    text-transform: uppercase;
+    text-align: center;
+}
