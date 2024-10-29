@@ -97,6 +97,8 @@ a {
     
 }
 
+
+
 .navlist li:nth-child(1) a {
     transition: 0.2s 0.2s;
 }
