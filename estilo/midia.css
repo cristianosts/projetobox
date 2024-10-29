@@ -1,53 +1,114 @@
 @charset "UTF-8";
 
-    header, header > nav {
-        flex-flow: column nowrap;
-    }
-   
-    header > h1 {
-        flex-basis: 50px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: block;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.nav {
+    max-width: 768px;
+    height: 200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: center / cover no-repeat url(../bg.jpg);
+}
+
+.hamburger {
+    display: block;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navlist {
+    display: flex;
+    background-color: #a5c;
+    gap: 32px;
+    list-style: none;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100vw;
+    height: 32vh;
+    clip-path: circle(768px at 90% -15%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+}
+
+.nav.active .navlist {
+    clip-path: circle(768px at 90% -15%);
+    pointer-events: all;
+}
+
+.nav.active .navlist a {
+    opacity: 1;
+}
+
+.nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+}
+
+.nav.active .hamburger::before {
+    transform: rotate(135deg);
+}
+
+.nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.navlist a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 15px;
+    opacity: 0;
     
-    .hamburger {
-        border: none;
-        background: none;
-        border-top: 3px solid #fff;
-        cursor: pointer;
-    }
+}
 
-    .hamburger::before,
-    .hamburger::after {
-        content: " ";
-        display: block;
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        margin-top: 5px;
-    }
+.navlist li:nth-child(1) a {
+    transition: 0.2s 0.2s;
+}
 
-    header > nav {
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        gap: 0;
-        background: center / cover no-repeat url(/bg.jpg);
-        width: 100vw;
-    }
+.navlist li:nth-child(2) a {
+    transition: 0.2s 0.4s;
+}
 
-    header > nav > a {
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        gap: 32px;
-        padding-block: 16px;
-        pointer-events: none;
-    }
+.navlist li:nth-child(3) a {
+    transition: 0.2s 0.6s;
+}
 
-    nav.active .nav {
-        clip-path: circle(100px at 90% -15%);
-        pointer-events: all;
-    }
+.navlist li:nth-child(4) a {
+    transition: 0.2s 0.8s;
+}

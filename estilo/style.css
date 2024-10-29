@@ -26,27 +26,7 @@ header > h1 {
     flex: 0 0 200px;
 }
 
-header > nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-}
 
-nav > a {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: rgb(5, 199, 199);
-    color: white;
-    text-align: center;
-}
-    
-nav > a:hover {
-    background-color: rgb(170, 169, 169);
-    cursor: pointer;
-    transition: background-color .5s;
-}
 
 main {
     width: 90vw;
