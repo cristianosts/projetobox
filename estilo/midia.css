@@ -66,6 +66,8 @@ a {
     pointer-events: none;
 }
 
+/*efeito do circulo no menu*/
+
 .nav.active .navlist {
     clip-path: circle(768px at 90% -15%);
     pointer-events: all;
