@@ -20,7 +20,7 @@ a {
     height: 200px;
     margin-inline: auto;
     display: flex;
-    background-color: #a5c;
+   
     justify-content: space-between;
     align-items: center;
    
@@ -62,7 +62,7 @@ a {
     height: 32vh;
     background-color: #a5c;
    
-    clip-path: circle(70px at 1% 50%);
+    clip-path: circle(1px at 1% 50%);
     transition: 1s ease-out;
     flex-direction: column;
     justify-content: space-around;
@@ -79,7 +79,7 @@ a {
 /*efeito do circulo no menu ;)*/
 
 .nav.active .navlist {
-    clip-path: circle(768px at 90% -15%);
+    clip-path: circle(768px at 1% 50%);
     pointer-events: all;
 }
 
