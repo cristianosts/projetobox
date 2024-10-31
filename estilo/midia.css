@@ -22,7 +22,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: center / cover no-repeat url(../bg.jpg);
+    background-color: #a5c;
    
 }
 
@@ -60,7 +60,7 @@ a {
     left: 0px;
     width: 100vw;
     height: 32vh;
-    background-color: #a5c;
+    background: center / cover no-repeat url(../bg.jpg);
    
     clip-path: circle(768px at 90% -15%);
     transition: 1s ease-out;
@@ -83,18 +83,19 @@ a {
 }
 
 .nav.active .hamburger {
-    position: fixed;
     left: 1px;
     border-top-color: transparent;
 }
 
 .nav.active .hamburger::before {
     transform: rotate(135deg);
+   
 }
 
 .nav.active .hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+    
 }
 
 .navlist a {
