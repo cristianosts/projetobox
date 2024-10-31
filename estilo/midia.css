@@ -20,9 +20,9 @@ a {
     height: 200px;
     margin-inline: auto;
     display: flex;
+    background-color: #a5c;
     justify-content: space-between;
     align-items: center;
-    background-color: #a5c;
    
 }
 
@@ -60,15 +60,20 @@ a {
     left: 0px;
     width: 100vw;
     height: 32vh;
-    background: center / cover no-repeat url(../bg.jpg);
+    background-color: #a5c;
    
-    clip-path: circle(768px at 90% -15%);
+    clip-path: circle(70px at 1% 50%);
     transition: 1s ease-out;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
     pointer-events: none;
+}
+
+.img {
+    height: calc(32vh);
+    background: center / cover no-repeat url(../bg.jpg);
 }
 
 /*efeito do circulo no menu ;)*/
